@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const fName = "Haroldo";
+const lName = "Júnio";
+
 ReactDOM.render(
   <div>
-    <h1>My favorite foods</h1>
-    <ul>
-      <li>Bacon</li>
-      <li>Jamon</li>
-      <li>Noodles</li>
-    </ul>
+    <h1>Hello {`${fName} ${lName}`}!</h1>
+    <p>Your lucky number is {Math.round(Math.random() * 10)}</p>
   </div>,
   document.getElementById("root")
 );
