@@ -1,10 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black"
+};
+
 ReactDOM.render(
   <div>
-    <h1>Hello world</h1>
-    <p>This is a paragraph.</p>
+    <h1 style={customStyle}>Hello world</h1>
   </div>,
   document.getElementById("root")
 );
